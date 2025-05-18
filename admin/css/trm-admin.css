@@ -1,0 +1,225 @@
+/* Admin Styles */
+.wrap {
+    margin: 20px;
+}
+
+.wp-list-table {
+    margin-top: 20px;
+}
+
+.wp-list-table th {
+    font-weight: 600;
+}
+
+.wp-list-table td {
+    vertical-align: middle;
+}
+
+.form-table th {
+    width: 200px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="number"],
+.form-table input[type="datetime-local"],
+.form-table select,
+.form-table textarea {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-table textarea {
+    min-height: 100px;
+}
+
+.description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.submit .button {
+    margin-right: 10px;
+}
+
+/* Status Colors */
+.status-active {
+    color: #46b450;
+}
+
+.status-inactive {
+    color: #dc3232;
+}
+
+.status-pending {
+    color: #ffb900;
+}
+
+/* Modal Styles */
+.trm-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.trm-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.trm-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trm-modal-close:hover {
+    color: black;
+}
+
+.trm-loading {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Team Management */
+.team-members-list {
+    margin-top: 20px;
+}
+
+.team-members-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team-members-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-members-list .member-status {
+    font-size: 0.9em;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.member-status.pending {
+    background-color: #ffb900;
+    color: #fff;
+}
+
+.member-status.active {
+    background-color: #46b450;
+    color: #fff;
+}
+
+/* Row Actions */
+.row-actions {
+    visibility: hidden;
+}
+
+tr:hover .row-actions {
+    visibility: visible;
+}
+
+/* Settings Page */
+.settings-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.settings-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Tournament List */
+.tournament-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.tournament-actions .button {
+    padding: 3px 8px;
+    height: auto;
+    line-height: 1.4;
+}
+
+/* Team Status Dropdown */
+.team-status {
+    width: 100px;
+}
+
+/* Error Messages */
+.error {
+    color: #dc3232;
+    padding: 10px;
+    background: #fff;
+    border-left: 4px solid #dc3232;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 0 15px;
+}
+
+/* Success Messages */
+.success {
+    color: #46b450;
+    padding: 10px;
+    background: #fff;
+    border-left: 4px solid #46b450;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 0 15px;
+}
+
+/* Loading Spinner */
+.spinner {
+    float: none;
+    margin: 0;
+    visibility: visible;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .form-table th {
+        width: auto;
+    }
+    
+    .form-table input[type="text"],
+    .form-table input[type="number"],
+    .form-table input[type="datetime-local"],
+    .form-table select,
+    .form-table textarea {
+        max-width: 100%;
+    }
+    
+    .trm-modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+    
+    .tournament-actions {
+        flex-direction: column;
+    }
+} 

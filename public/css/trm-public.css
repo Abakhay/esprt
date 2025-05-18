@@ -1,0 +1,463 @@
+/* Public Styles */
+.trm-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.trm-tournament-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.trm-tournament-info h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.trm-tournament-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Registration Forms */
+.trm-registration-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trm-form-section {
+    margin-bottom: 30px;
+}
+
+.trm-form-section h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.trm-form-group {
+    margin-bottom: 20px;
+}
+
+.trm-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.trm-form-group input[type="text"],
+.trm-form-group input[type="email"],
+.trm-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.trm-form-group input[type="text"]:focus,
+.trm-form-group input[type="email"]:focus,
+.trm-form-group select:focus {
+    border-color: #0073aa;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,115,170,0.3);
+}
+
+.trm-submit-button {
+    background: #0073aa;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.trm-submit-button:hover {
+    background: #005177;
+}
+
+/* Team Management */
+.trm-team-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.trm-team-info {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.trm-team-members {
+    margin-top: 20px;
+}
+
+.trm-team-member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.trm-team-member:last-child {
+    border-bottom: none;
+}
+
+.trm-member-info {
+    flex: 1;
+}
+
+.trm-member-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.trm-member-gamertag {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.trm-member-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.trm-member-status.pending {
+    background: #ffb900;
+    color: #fff;
+}
+
+.trm-member-status.active {
+    background: #46b450;
+    color: #fff;
+}
+
+/* Action Buttons */
+.trm-action-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.trm-action-button.approve {
+    background: #46b450;
+    color: #fff;
+}
+
+.trm-action-button.approve:hover {
+    background: #3a9e43;
+}
+
+.trm-action-button.reject {
+    background: #dc3232;
+    color: #fff;
+}
+
+.trm-action-button.reject:hover {
+    background: #c62828;
+}
+
+/* Messages */
+.trm-message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.trm-message.success {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.trm-message.error {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.trm-message.info {
+    background: #d9edf7;
+    color: #31708f;
+    border: 1px solid #bce8f1;
+}
+
+/* Loading States */
+.trm-loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.trm-loading::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .trm-container {
+        padding: 10px;
+    }
+    
+    .trm-registration-form,
+    .trm-team-section {
+        padding: 20px;
+    }
+    
+    .trm-team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .trm-member-info {
+        margin-bottom: 10px;
+    }
+    
+    .trm-action-button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+/* Login Required Message */
+.trm-login-required {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trm-login-required p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.trm-login-button {
+    display: inline-block;
+    background: #0073aa;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.trm-login-button:hover {
+    background: #005177;
+    color: #fff;
+}
+
+/* Tournament List */
+.trm-tournament-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.trm-tournament-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.trm-tournament-item:hover {
+    transform: translateY(-5px);
+}
+
+.trm-tournament-item h3 {
+    margin: 0;
+    padding: 15px;
+    background: #0073aa;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.trm-tournament-details {
+    padding: 15px;
+}
+
+.trm-tournament-details p {
+    margin: 0 0 15px;
+    color: #666;
+}
+
+.trm-tournament-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+.trm-tournament-details li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.trm-tournament-details li:last-child {
+    border-bottom: none;
+}
+
+.trm-tournament-details strong {
+    color: #333;
+    margin-right: 5px;
+}
+
+.trm-tournament-actions {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.trm-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.trm-button:hover {
+    background: #005177;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .trm-tournament-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Modal Styles */
+.trm-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+.trm-modal-content {
+    background: #181a1b;
+    margin: 40px auto;
+    padding: 30px 20px 20px 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    color: #fff;
+}
+.trm-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10001;
+    transition: color 0.2s;
+}
+.trm-modal-close:hover {
+    color: #0073aa;
+}
+@media (max-width: 600px) {
+    .trm-modal-content {
+        max-width: 95vw;
+        padding: 20px 5px 10px 5px;
+    }
+    .trm-modal-close {
+        right: 10px;
+        top: 5px;
+    }
+}
+
+.trm-pending-requests button,
+.trm-action-button.approve,
+.trm-action-button.reject {
+    padding: 4px 10px;
+    font-size: 13px;
+    border-radius: 3px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    min-width: 60px;
+}
+
+.trm-pending-requests button:last-child,
+.trm-action-button.reject:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 600px) {
+    .trm-pending-requests button,
+    .trm-action-button.approve,
+    .trm-action-button.reject {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.trm-request-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Optional: adds space between children */
+}
+
+/* Force Terms of Use checkbox to be visible */
+.trm-terms-checkbox {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 8px;
+    vertical-align: middle;
+} 
